@@ -1,2 +1,0 @@
-# Starting compiling View.dll
-C:\Program Files\Unity\Hub\Editor\2020.3.8f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-600bc6d39664d6e4180afe930fdb66e7

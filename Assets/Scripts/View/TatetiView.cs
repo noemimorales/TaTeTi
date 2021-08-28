@@ -6,13 +6,13 @@ using UnityEngine.UI;
 
 public class TatetiView : MonoBehaviour
 {
-    [SerializeField] private Button[] inputButton;
+    [SerializeField] private Button[] inputButtons;
     [SerializeField] private Button playAgainButton;
 
     private int size = 3;
 
-    private Sprite crossImage;
-    private Sprite cicleImage;
+    [SerializeField] private Sprite crossImage;
+    [SerializeField] private Sprite cicleImage;
 
  
     // Start is called before the first frame update
@@ -23,20 +23,19 @@ public class TatetiView : MonoBehaviour
 
     private void SetInputAtions()
     {
-        for(int i = 0; i < inputButton.Length; i++)
+        for(int positionInArray = 0; positionInArray < inputButtons.Length; positionInArray++)
         {
-            int positionInArray = 1;
-            inputButton[positionInArray].onClick.AddListener(()=> {
+            inputButtons[positionInArray].onClick.AddListener(()=> {
                 int x = GetXPosition(positionInArray);
                 int y = GETYPosition(positionInArray);
                 OnClickInput(x, y);
             });
-        }
+         }
     }
 
     private void OnClickInput(int x, int y)
     {
-        
+        SetCross(x,y);
     }
 
     private int GETYPosition(int positionInArray)
@@ -48,7 +47,19 @@ public class TatetiView : MonoBehaviour
     {
         return positionInArray % size;
     }
+    private void SetCircle(int x,int y)
+    {
+        inputButtons[GetIndexFromCoordinates(x, y)].image.sprite = cicleImage;
+    }
 
+    private void SetCross(int x, int y)
+    {
+        inputButtons[GetIndexFromCoordinates(x, y)].image.sprite = crossImage;
+    }
+    private int GetIndexFromCoordinates(int x, int y)
+    {
+        return x + y * size;
+    }
     // Update is called once per frame
     void Update()
     {
