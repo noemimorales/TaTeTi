@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tateti : MonoBehaviour
+public class Tateti 
 {
-    // Start is called before the first frame update
-    void Start()
+    private int[,] matrix = new int[2, 2];
+    public int[,] Matrix { get => matrix; set => matrix = value; }
+    public Tateti()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
