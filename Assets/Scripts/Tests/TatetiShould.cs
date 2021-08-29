@@ -8,17 +8,28 @@ public class TatetiShould
 {
     // Debe haber una matriz de 3x3
     [Test]
-    public void HasAThreeByThreeMatrix()
+    public void HasAThreeByThreeMatrix() 
     {
-        ////given
-        //Tateti tateti = new Tateti();
+        //given
+        Tateti tateti = new Tateti();
 
-        ////when
-        //private int[,] expectedMatrix = new int[2, 2];
-        //private int[,] resultMatrix = tateti.Matrix;
+        //when
+        string[,] expectedMatrix = new string[3, 3];
+        string[,] resultMatrix = tateti.Matrix;
 
-        ////then
-        //Assert.AreEqual(expectedMatrix.Length(0), resultMatrix.Length(0));
-        //Assert.AreEqual(expectedMatrix.Length(1), resultMatrix.Length(1));
+        //then
+        Assert.AreEqual(expectedMatrix.GetLength(0), resultMatrix.GetLength(0));
+        Assert.AreEqual(expectedMatrix.GetLength(1), resultMatrix.GetLength(1));
+    }
+
+    // La matriz debe crearse vacía
+    [Test]
+    public void HasAnEmptyMatrix()
+    {
+        //given
+        Tateti tateti = new Tateti();
+
+        //Then
+        Assert.IsNotNull(tateti.Matrix);
     }
 }

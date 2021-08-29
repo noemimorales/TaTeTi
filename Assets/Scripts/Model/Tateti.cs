@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Tateti 
 {
-    private int[,] matrix = new int[2, 2];
-    public int[,] Matrix { get => matrix; set => matrix = value; }
+    private string[,] matrix = new string[3, 3];
+    public string[,] Matrix { get => matrix; set => matrix = value; }
     public Tateti()
     {
     }
