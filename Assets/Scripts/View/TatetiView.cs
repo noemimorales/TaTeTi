@@ -9,8 +9,8 @@ public class TatetiView : MonoBehaviour, ITatetiView
 {
     [SerializeField] private Button[] inputButtons;
     [SerializeField] private Button playAgainButton;
-    [SerializeField] private Toggle[] crossImage;
-    [SerializeField] private Toggle[] circleImage;
+    [SerializeField] private GameObject[] crossImage;
+    [SerializeField] private GameObject[] circleImage;
     [SerializeField] private TMP_Text player;
 
     private TatetiPresenter tatetiPresenter;
@@ -22,8 +22,8 @@ public class TatetiView : MonoBehaviour, ITatetiView
         tatetiPresenter.Initialize(this);
         for (int i = 0; i < inputButtons.Length; i++)
         {
-            crossImage[i].isOn = false;
-            circleImage[i].isOn = false;
+            crossImage[i].SetActive(false);
+            circleImage[i].SetActive(false);
         }
         SetInputAtions();
         playAgainButton.onClick.AddListener(CleanGame);
@@ -32,7 +32,11 @@ public class TatetiView : MonoBehaviour, ITatetiView
 
     private void CleanGame()
     {
-        Start();
+        for (int i = 0; i < inputButtons.Length; i++)
+        {
+            crossImage[i].SetActive(false);
+            circleImage[i].SetActive(false);
+        }
     }
 
     public void Initialize(TatetiPresenter tatetiPresenter)
@@ -95,11 +99,11 @@ public class TatetiView : MonoBehaviour, ITatetiView
     {
         if (tatetiPresenter.ISPlayer1 == true)
         {
-            crossImage[positionInArray].isOn = true;
+            crossImage[positionInArray].SetActive(true);
         }
         else
         {
-            circleImage[positionInArray].isOn = true;
+            circleImage[positionInArray].SetActive(true);
         }
 
         tatetiPresenter.SaveUserChoice(positionInArray);
@@ -112,17 +116,5 @@ public class TatetiView : MonoBehaviour, ITatetiView
             player.text = "Player2";
         }
     }
-
-    //private void SetCircle(int x, int y)
-    //{
-    //    inputButtons[GetIndexFromCoordinates(x, y)].image.sprite = cicleImage;
-    //}
-
-    //private void SetCross(int x, int y)
-    //{
-    //    inputButtons[GetIndexFromCoordinates(x, y)].image.sprite = crossImage;
-    //}
-    // Update is called once per frame
-
 
 }

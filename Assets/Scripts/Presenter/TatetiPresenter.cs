@@ -68,13 +68,4 @@ public class TatetiPresenter
         return x + y * size;
     }
 
-    //public void DrawResults()
-    //{
-    //    tatetiView.DrawCross(tateti.Cross);
-    //    for (int i = 0; i < game.frames.Length; i++)
-    //    {
-    //        gameView.DrawFrame(i + 1, game.frames[i].Score, game.frames[i].Balls, game.frames[i].CurrentBall, game.frames[i].IsStrike, game.frames[i].IsSpare);
-    //    }
-    //}
-
 }
