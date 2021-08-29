@@ -9,8 +9,8 @@ public class TatetiView : MonoBehaviour, ITatetiView
 {
     [SerializeField] private Button[] inputButtons;
     [SerializeField] private Button playAgainButton;
-    [SerializeField] private GameObject[] crossImage;
-    [SerializeField] private GameObject[] circleImage;
+    [SerializeField] private Image[] crossImage;
+    [SerializeField] private Image[] circleImage;
     [SerializeField] private TMP_Text player;
     [SerializeField] private TMP_Text winPlayer;
 
@@ -23,10 +23,10 @@ public class TatetiView : MonoBehaviour, ITatetiView
         tatetiPresenter.Initialize(this);
         for (int i = 0; i < inputButtons.Length; i++)
         {
-            crossImage[i].SetActive(false);
-            circleImage[i].SetActive(false);
+            crossImage[i].gameObject.SetActive(false);
+            circleImage[i].gameObject.SetActive(false);
         }
-        playAgainButton.enabled = false;
+        playAgainButton.gameObject.SetActive(false);
         SetInputAtions();
         playAgainButton.onClick.AddListener(CleanGame);
 
@@ -38,12 +38,12 @@ public class TatetiView : MonoBehaviour, ITatetiView
         tatetiPresenter.Initialize(this);
         for (int i = 0; i < inputButtons.Length; i++)
         {
-            crossImage[i].SetActive(false);
-            circleImage[i].SetActive(false);
+            crossImage[i].gameObject.SetActive(false);
+            circleImage[i].gameObject.SetActive(false);
         }
         winPlayer.text = "";
         tatetiPresenter.RestartGame();
-        playAgainButton.enabled = false;
+        playAgainButton.gameObject.SetActive(false);
 
     }
 
@@ -107,16 +107,16 @@ public class TatetiView : MonoBehaviour, ITatetiView
     {
         if (tatetiPresenter.IdentifyPlayer())
         {
-            crossImage[positionInArray].SetActive(true);
+            crossImage[positionInArray].gameObject.SetActive(true);
         }
         else
         {
-            circleImage[positionInArray].SetActive(true);
+            circleImage[positionInArray].gameObject.SetActive(true);
         }
 
         if (tatetiPresenter.SaveUserChoice(positionInArray) != null)
         {
-            playAgainButton.enabled = true;
+            playAgainButton.gameObject.SetActive(true);
 
         }
         if (tatetiPresenter.IdentifyPlayer())
@@ -140,6 +140,6 @@ public class TatetiView : MonoBehaviour, ITatetiView
         {
             winPlayer.text = winner + " YOU WIN!!!!!";
         }
-        playAgainButton.enabled = true;
+        playAgainButton.gameObject.SetActive(true);
     }
 }
