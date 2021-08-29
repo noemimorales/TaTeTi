@@ -13,6 +13,17 @@ public class Tateti
     public string Winner { get; set; }
     public bool Win { get; set; }
 
+    List<string> winCombinations = new List<string>
+        {
+            "012",
+            "345",
+            "678",
+            "036",
+            "147",
+            "258",
+            "048",
+            "246"
+        };
     public void CleanMatrix()
     {
         for (int column = 0; column < Matrix.GetLength(1); column++)
@@ -39,7 +50,7 @@ public class Tateti
 
     public string PutNamePlayer(bool isFirstPlayer)
     {
-        if (isFirstPlayer == true)
+        if (isFirstPlayer)
         {
             return "Player1";
         }
@@ -67,14 +78,7 @@ public class Tateti
     }
     public void ChangeUser(bool isFirstPlayer)
     {
-        if (isFirstPlayer == true)
-        {
-            IsFirstPlayer = false;
-        }
-        else
-        {
-            IsFirstPlayer = true;
-        }
+        IsFirstPlayer = !isFirstPlayer;
     }
 
     public void SavePositionInMatrix(string player, int[] positionInMatrix)
@@ -85,19 +89,8 @@ public class Tateti
     public bool CheckIfIsTateti(string[,] matrix, string player)
     {
         string playedPositionsByPlayer = GetPlayerPositions(matrix, player);
-        List<string> combinationsToWin = new List<string>
-        {
-            "012",
-            "345",
-            "678",
-            "036",
-            "147",
-            "258",
-            "048",
-            "246"
-        };
         char[] listOfPlayedPositionsByPlayer = playedPositionsByPlayer.ToCharArray();
-        SearchCoincidens(combinationsToWin, listOfPlayedPositionsByPlayer);
+        SearchCoincidens(winCombinations, listOfPlayedPositionsByPlayer);
         return Win;
     }
 

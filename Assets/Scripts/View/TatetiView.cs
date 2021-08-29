@@ -15,8 +15,6 @@ public class TatetiView : MonoBehaviour, ITatetiView
     [SerializeField] private TMP_Text winPlayer;
 
     private TatetiPresenter tatetiPresenter;
-    private int positionInArray;
-    private bool controler = false;
 
     private void Start()
     {
@@ -54,84 +52,23 @@ public class TatetiView : MonoBehaviour, ITatetiView
     }
     private void DetectButtonClick()
     {
-        //for (int i = 0; i < inputButtons.Length; i++)
-        //{
-        //    inputButtons[i].onClick.AddListener(()=>
-        //    {
-        //        positionInArray = i;
-        //        SetImageToButton();
-        //    });
-        //}
-        inputButtons[0].onClick.AddListener(() =>
+        for (int i = 0; i < inputButtons.Length; i++)
         {
-            positionInArray = 0;
-            SetImageToButton();
-            DetectIsThereIsAWinner();
-            IdentifyPlayerInView();
-        });
+            ButtonAction(i);
+        }
+    }
 
-        inputButtons[1].onClick.AddListener(() =>
+    private void ButtonAction(int positionInArray)
+    {
+        inputButtons[positionInArray].onClick.AddListener(() =>
         {
-            positionInArray = 1;
-            SetImageToButton();
-            DetectIsThereIsAWinner();
-            IdentifyPlayerInView();
-        });
-
-        inputButtons[2].onClick.AddListener(() =>
-        {
-            positionInArray = 2;
-            SetImageToButton();
-            DetectIsThereIsAWinner();
-            IdentifyPlayerInView();
-        });
-        inputButtons[3].onClick.AddListener(() =>
-        {
-            positionInArray = 3;
-            SetImageToButton();
-            DetectIsThereIsAWinner();
-            IdentifyPlayerInView();
-        });
-        inputButtons[4].onClick.AddListener(() =>
-        {
-            positionInArray = 4;
-            SetImageToButton();
-            DetectIsThereIsAWinner();
-            IdentifyPlayerInView();
-        });
-
-        inputButtons[5].onClick.AddListener(() =>
-        {
-            positionInArray = 5;
-            SetImageToButton();
-            DetectIsThereIsAWinner();
-            IdentifyPlayerInView();
-        });
-        inputButtons[6].onClick.AddListener(() =>
-        {
-            positionInArray = 6;
-            SetImageToButton();
-            DetectIsThereIsAWinner();
-            IdentifyPlayerInView();
-        });
-        inputButtons[7].onClick.AddListener(() =>
-        {
-            positionInArray = 7;
-            SetImageToButton();
-            DetectIsThereIsAWinner();
-            IdentifyPlayerInView();
-        });
-
-        inputButtons[8].onClick.AddListener(() =>
-        {
-            positionInArray = 8;
-            SetImageToButton();
-            DetectIsThereIsAWinner();
+            SetImageToButton(positionInArray);
+            DetectIsThereIsAWinner(positionInArray);
             IdentifyPlayerInView();
         });
     }
 
-    private void SetImageToButton()
+    private void SetImageToButton(int positionInArray)
     {
         if (tatetiPresenter.IdentifyPlayer())
         {
@@ -143,7 +80,7 @@ public class TatetiView : MonoBehaviour, ITatetiView
         }
     }
 
-    private void DetectIsThereIsAWinner()
+    private void DetectIsThereIsAWinner(int positionInArray)
     {
         if (tatetiPresenter.SaveUserChoice(positionInArray) != null)
         {
