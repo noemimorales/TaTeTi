@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1280
     height: 587.3334
-  m_MinSize: {x: 677, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 501, y: 321}
+  m_MaxSize: {x: 12001, y: 8021}
   vertical: 0
-  controlID: 38135
+  controlID: 38644
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -45,9 +45,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 371
-    y: 19
-    width: 632
+    x: 2207.3333
+    y: 72.66667
+    width: 493.33334
     height: 295.66666
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -83,7 +83,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -92,23 +92,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 632
+      width: 493.33334
       height: 274.66666
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 316, y: 137.33333}
+    m_Translation: {x: 246.66667, y: 137.33333}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -316
+      x: -246.66667
       y: -137.33333
-      width: 632
+      width: 493.33334
       height: 274.66666
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 948, y: 443.5}
+  m_LastWindowPixelSize: {x: 740, y: 443.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000000000000
@@ -133,12 +133,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1004
+    width: 782.6667
     height: 587.3334
-  m_MinSize: {x: 402, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
+  m_MinSize: {x: 401, y: 321}
+  m_MaxSize: {x: 8001, y: 8021}
   vertical: 1
-  controlID: 38093
+  controlID: 38645
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -158,12 +158,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1004
+    width: 782.6667
     height: 316.66666
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 401, y: 221}
+  m_MaxSize: {x: 8001, y: 4021}
   vertical: 0
-  controlID: 38068
+  controlID: 38646
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -181,10 +181,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 370
+    width: 287.33334
     height: 316.66666
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -212,7 +212,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1920
     y: 72.66667
-    width: 369
+    width: 286.33334
     height: 295.66666
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
@@ -220,7 +220,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 9093ffffeea4ffff9ee6ffff40f3ffff52f3ffffc0f3ffffe0f3ffff00f5ffffd4f5fffff4f6ffff18f8ffff3cf9ffff40fbffffbc430000da4300002c440000
+      m_ExpandedIDs: 7852ffffc853ffff0e55ffff0656fffffe56ffff4658ffff8c59ffffd85bffff9093ffffeea4ffff9ee6ffff40f3ffff52f3ffffc0f3ffffe0f3ffff00f5ffffd4f5fffff4f6ffff18f8ffff3cf9ffff40fbffffbc430000da4300002c440000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -259,12 +259,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 370
+    x: 287.33334
     y: 0
-    width: 634
+    width: 495.33334
     height: 316.66666
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 8}
@@ -291,9 +291,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2290
+    x: 2240.6667
     y: 72.66667
-    width: 632
+    width: 546.6666
     height: 295.66666
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -397,23 +397,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 316.66666
-    width: 1004
+    width: 782.6667
     height: 270.66672
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
-  m_ActualView: {fileID: 10}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 10}
   - {fileID: 11}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -436,7 +436,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1920
     y: 389.33334
-    width: 1003
+    width: 868.3333
     height: 249.66672
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -452,21 +452,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites
+    - Assets/Scripts/Tests
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprites
+  - Assets/Scripts/Tests
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\_mio\katas\TaTeTi
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c4400000
-    m_LastClickedID: 16580
+    m_SelectedIDs: c8400000
+    m_LastClickedID: 16584
     m_ExpandedIDs: 00000000b840000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -573,7 +573,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1920
     y: 389.33334
-    width: 859.6667
+    width: 781.6667
     height: 249.66672
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &12
@@ -586,23 +586,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1004
+    x: 782.6667
     y: 0
-    width: 276
+    width: 497.3333
     height: 587.3334
-  m_MinSize: {x: 275, y: 50}
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 13}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -660,13 +660,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2780.6667
+    x: 2702.6667
     y: 72.66667
-    width: 418.3333
+    width: 496.3333
     height: 566.3334
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 177
+    ID: 38666
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -750,7 +750,7 @@ MonoBehaviour:
       name: TaTeTi
       fullName: TaTeTi
       resultStatus: 1
-      duration: 0.0774189
+      duration: 0.0802839
       messages: 
       output: 
       stacktrace: 
@@ -766,7 +766,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: D:/_mio/katas/TaTeTi/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.0377782
+      duration: 0.0523348
       messages: 
       output: 
       stacktrace: 
@@ -782,7 +782,7 @@ MonoBehaviour:
       name: TatetiShould
       fullName: TatetiShould
       resultStatus: 1
-      duration: 0.0353435
+      duration: 0.0505076
       messages: 
       output: 
       stacktrace: 
@@ -793,12 +793,28 @@ MonoBehaviour:
       categories: []
       parentId: 1003
       parentUniqueId: '[Tests][D:/_mio/katas/TaTeTi/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1003
-      uniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.HasAnEmptyMatrix]
-      name: HasAnEmptyMatrix
-      fullName: TatetiShould.HasAnEmptyMatrix
+    - id: 1008
+      uniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.ChangePlayerAfterPlay][suite]
+      name: ChangePlayerAfterPlay
+      fullName: TatetiShould.ChangePlayerAfterPlay
       resultStatus: 1
-      duration: 0.0140793
+      duration: 0.0274273
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][TatetiShould][suite]
+    - id: 1006
+      uniqueId: Tests.dll/TatetiShould/ChangePlayerAfterPlay/[Tests][TatetiShould.ChangePlayerAfterPlay(False,True)]
+      name: ChangePlayerAfterPlay(False,True)
+      fullName: TatetiShould.ChangePlayerAfterPlay(False,True)
+      resultStatus: 1
+      duration: 0.0196171
       messages: 
       output: 
       stacktrace: 
@@ -808,14 +824,31 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/[Tests][TatetiShould][suite]
+      parentId: 1008
+      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.ChangePlayerAfterPlay][suite]
+    - id: 1007
+      uniqueId: Tests.dll/TatetiShould/ChangePlayerAfterPlay/[Tests][TatetiShould.ChangePlayerAfterPlay(True,False)]
+      name: ChangePlayerAfterPlay(True,False)
+      fullName: TatetiShould.ChangePlayerAfterPlay(True,False)
+      resultStatus: 1
+      duration: 0.0005003
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.ChangePlayerAfterPlay][suite]
     - id: 1002
       uniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.HasAThreeByThreeMatrix]
       name: HasAThreeByThreeMatrix
       fullName: TatetiShould.HasAThreeByThreeMatrix
       resultStatus: 1
-      duration: 0.0042892
+      duration: 0.0012052
       messages: 
       output: 
       stacktrace: 
@@ -827,13 +860,63 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/[Tests][TatetiShould][suite]
-    m_ResultText: HasAnEmptyMatrix (0,014s)
+    - id: 1005
+      uniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.SaveInMatrixPlayerSelection][suite]
+      name: SaveInMatrixPlayerSelection
+      fullName: TatetiShould.SaveInMatrixPlayerSelection
+      resultStatus: 1
+      duration: 0.0095813
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][TatetiShould][suite]
+    - id: 1003
+      uniqueId: Tests.dll/TatetiShould/SaveInMatrixPlayerSelection/[Tests][TatetiShould.SaveInMatrixPlayerSelection("Player1",True)]
+      name: SaveInMatrixPlayerSelection("Player1",True)
+      fullName: TatetiShould.SaveInMatrixPlayerSelection("Player1",True)
+      resultStatus: 1
+      duration: 0.0007328
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.SaveInMatrixPlayerSelection][suite]
+    - id: 1004
+      uniqueId: Tests.dll/TatetiShould/SaveInMatrixPlayerSelection/[Tests][TatetiShould.SaveInMatrixPlayerSelection("Player2",False)]
+      name: SaveInMatrixPlayerSelection("Player2",False)
+      fullName: TatetiShould.SaveInMatrixPlayerSelection("Player2",False)
+      resultStatus: 1
+      duration: 0.0001858
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.SaveInMatrixPlayerSelection][suite]
+    m_ResultText: SaveInMatrixPlayerSelection("Player1",True) (0,001s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fbb18459
-      m_LastClickedID: 1501868539
-      m_ExpandedIDs: 53770381f5d2b4e68131241dffffff7f
+      m_SelectedIDs: 303ddbc2
+      m_LastClickedID: -1025819344
+      m_ExpandedIDs: 53770381410ef0c4f5d2b4e68131241d28cab83bffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

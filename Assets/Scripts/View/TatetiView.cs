@@ -97,7 +97,7 @@ public class TatetiView : MonoBehaviour, ITatetiView
 
     private void OnClickInput()
     {
-        if (tatetiPresenter.ISPlayer1 == true)
+        if (tatetiPresenter.IdentifyPlayer())
         {
             crossImage[positionInArray].SetActive(true);
         }
@@ -107,7 +107,7 @@ public class TatetiView : MonoBehaviour, ITatetiView
         }
 
         tatetiPresenter.SaveUserChoice(positionInArray);
-        if (tatetiPresenter.ISPlayer1 == true)
+        if (tatetiPresenter.IdentifyPlayer())
         {
             player.text = "Player1";
         }
