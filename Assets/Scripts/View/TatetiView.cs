@@ -16,6 +16,7 @@ public class TatetiView : MonoBehaviour, ITatetiView
 
     private TatetiPresenter tatetiPresenter;
     private int positionInArray;
+    private bool controler = false;
 
     private void Start()
     {
@@ -27,7 +28,7 @@ public class TatetiView : MonoBehaviour, ITatetiView
             circleImage[i].gameObject.SetActive(false);
         }
         playAgainButton.gameObject.SetActive(false);
-        SetInputAtions();
+        DetectButtonClick();
         playAgainButton.onClick.AddListener(CleanGame);
 
     }
@@ -51,59 +52,86 @@ public class TatetiView : MonoBehaviour, ITatetiView
     {
         this.tatetiPresenter = tatetiPresenter;
     }
-    private void SetInputAtions()
+    private void DetectButtonClick()
     {
-       inputButtons[0].onClick.AddListener(() =>
+        //for (int i = 0; i < inputButtons.Length; i++)
+        //{
+        //    inputButtons[i].onClick.AddListener(()=>
+        //    {
+        //        positionInArray = i;
+        //        SetImageToButton();
+        //    });
+        //}
+        inputButtons[0].onClick.AddListener(() =>
         {
             positionInArray = 0;
-            OnClickInput();
+            SetImageToButton();
+            DetectIsThereIsAWinner();
+            IdentifyPlayerInView();
         });
+
         inputButtons[1].onClick.AddListener(() =>
         {
             positionInArray = 1;
-            OnClickInput();
+            SetImageToButton();
+            DetectIsThereIsAWinner();
+            IdentifyPlayerInView();
         });
 
         inputButtons[2].onClick.AddListener(() =>
         {
             positionInArray = 2;
-            OnClickInput();
+            SetImageToButton();
+            DetectIsThereIsAWinner();
+            IdentifyPlayerInView();
         });
         inputButtons[3].onClick.AddListener(() =>
         {
             positionInArray = 3;
-            OnClickInput();
+            SetImageToButton();
+            DetectIsThereIsAWinner();
+            IdentifyPlayerInView();
         });
         inputButtons[4].onClick.AddListener(() =>
         {
             positionInArray = 4;
-            OnClickInput();
+            SetImageToButton();
+            DetectIsThereIsAWinner();
+            IdentifyPlayerInView();
         });
 
         inputButtons[5].onClick.AddListener(() =>
         {
             positionInArray = 5;
-            OnClickInput();
+            SetImageToButton();
+            DetectIsThereIsAWinner();
+            IdentifyPlayerInView();
         });
         inputButtons[6].onClick.AddListener(() =>
         {
             positionInArray = 6;
-            OnClickInput();
+            SetImageToButton();
+            DetectIsThereIsAWinner();
+            IdentifyPlayerInView();
         });
         inputButtons[7].onClick.AddListener(() =>
         {
             positionInArray = 7;
-            OnClickInput();
+            SetImageToButton();
+            DetectIsThereIsAWinner();
+            IdentifyPlayerInView();
         });
 
         inputButtons[8].onClick.AddListener(() =>
         {
             positionInArray = 8;
-            OnClickInput();
+            SetImageToButton();
+            DetectIsThereIsAWinner();
+            IdentifyPlayerInView();
         });
     }
 
-    private void OnClickInput()
+    private void SetImageToButton()
     {
         if (tatetiPresenter.IdentifyPlayer())
         {
@@ -113,21 +141,27 @@ public class TatetiView : MonoBehaviour, ITatetiView
         {
             circleImage[positionInArray].gameObject.SetActive(true);
         }
+    }
 
+    private void DetectIsThereIsAWinner()
+    {
         if (tatetiPresenter.SaveUserChoice(positionInArray) != null)
         {
             playAgainButton.gameObject.SetActive(true);
 
         }
+    }
+
+    private void IdentifyPlayerInView()
+    {
         if (tatetiPresenter.IdentifyPlayer())
         {
             player.text = "Player1";
         }
         else
-            {
-                player.text = "Player2";
-            }
-
+        {
+            player.text = "Player2";
+        }
     }
 
     public void SetWinner(string winner)
