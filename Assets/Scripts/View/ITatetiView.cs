@@ -4,5 +4,6 @@ using UnityEngine;
 public interface ITatetiView
 {
     void Initialize(TatetiPresenter tatetiPresenter);
+    void SetWinner(string winner);
     //void DrawCross(object cross);
 }

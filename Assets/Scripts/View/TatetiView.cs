@@ -12,6 +12,7 @@ public class TatetiView : MonoBehaviour, ITatetiView
     [SerializeField] private GameObject[] crossImage;
     [SerializeField] private GameObject[] circleImage;
     [SerializeField] private TMP_Text player;
+    [SerializeField] private TMP_Text winPlayer;
 
     private TatetiPresenter tatetiPresenter;
     private int positionInArray;
@@ -25,6 +26,7 @@ public class TatetiView : MonoBehaviour, ITatetiView
             crossImage[i].SetActive(false);
             circleImage[i].SetActive(false);
         }
+        playAgainButton.enabled = false;
         SetInputAtions();
         playAgainButton.onClick.AddListener(CleanGame);
 
@@ -32,11 +34,17 @@ public class TatetiView : MonoBehaviour, ITatetiView
 
     private void CleanGame()
     {
+        tatetiPresenter = new TatetiPresenter();
+        tatetiPresenter.Initialize(this);
         for (int i = 0; i < inputButtons.Length; i++)
         {
             crossImage[i].SetActive(false);
             circleImage[i].SetActive(false);
         }
+        winPlayer.text = "";
+        tatetiPresenter.RestartGame();
+        playAgainButton.enabled = false;
+
     }
 
     public void Initialize(TatetiPresenter tatetiPresenter)
@@ -106,15 +114,32 @@ public class TatetiView : MonoBehaviour, ITatetiView
             circleImage[positionInArray].SetActive(true);
         }
 
-        tatetiPresenter.SaveUserChoice(positionInArray);
+        if (tatetiPresenter.SaveUserChoice(positionInArray) != null)
+        {
+            playAgainButton.enabled = true;
+
+        }
         if (tatetiPresenter.IdentifyPlayer())
         {
             player.text = "Player1";
         }
         else
-        {
-            player.text = "Player2";
-        }
+            {
+                player.text = "Player2";
+            }
+
     }
 
+    public void SetWinner(string winner)
+    {
+        if (winner == "nobody")
+        {
+            winPlayer.text = " NOBODY WIN!!!!!";
+        }
+        else
+        {
+            winPlayer.text = winner + " YOU WIN!!!!!";
+        }
+        playAgainButton.enabled = true;
+    }
 }

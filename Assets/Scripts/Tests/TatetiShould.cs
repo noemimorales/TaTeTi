@@ -29,7 +29,7 @@ public class TatetiShould
         Tateti tateti = new Tateti();
 
         //Then
-        Assert.AreEqual(expectedPlayer, tateti.SavePlayer(isPlayer1));
+        Assert.AreEqual(expectedPlayer, tateti.namePlayer(isPlayer1));
     }
 
     [TestCase(false, true)]
@@ -92,12 +92,12 @@ public class TatetiShould
     [TestCase("Player2", 1)]
     [TestCase(null, 2)]
 
-    public void CheckIfPositionIsBusy(string busy, int position)
+    public void CheckIfIsTateti(string[,] matrix, string player)
     {
         //given
         Tateti tateti = new Tateti();
 
         //Then
-        Assert.IsTrue(tateti.CheckIfPositionIsBusy(busy, position));
+        Assert.IsTrue(tateti.CheckIfIsTateti(matrix,player));
     }
 }
