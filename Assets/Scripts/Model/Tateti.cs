@@ -31,6 +31,7 @@ public class Tateti
         if(CheckIfIsTateti(coordinates.Matrix, player))
         {
             Winner=player;
+            coordinates.CleanMatrix();
         } else ChangeUser(IsFirstPlayer);
     }
 

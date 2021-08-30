@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class TatetiView : MonoBehaviour, ITatetiView
 {
     private TatetiPresenter tatetiPresenter = new TatetiPresenter();
-    private CoordinatesPresenter coordinatesPresenter = new CoordinatesPresenter();
     private List<ButtonView> buttonsInGrid;
 
     [SerializeField] public Button playAgainButton;
@@ -22,7 +21,6 @@ public class TatetiView : MonoBehaviour, ITatetiView
     {
         buttonsInGrid = new List<ButtonView>(buttonsContainer.GetComponentsInChildren<ButtonView>());
         tatetiPresenter.InitializeTateti(this);
-        coordinatesPresenter.InitializeCoordinates(this);
         playAgainButton.gameObject.SetActive(false);
         playAgainButton.onClick.AddListener(CleanGame);
         actualPlayer = IdentifyPlayerInView();
@@ -90,7 +88,6 @@ public class TatetiView : MonoBehaviour, ITatetiView
     {
         winPlayer.text = "";
         tatetiPresenter.RestartGame();
-        coordinatesPresenter.RestartGame();
         playAgainButton.gameObject.SetActive(false);
 
     }
@@ -100,10 +97,6 @@ public class TatetiView : MonoBehaviour, ITatetiView
         this.tatetiPresenter = tatetiPresenter;
     }
 
-    public void InitializeCoordinates(CoordinatesPresenter coordinatesPresenter)
-    {
-        this.coordinatesPresenter = coordinatesPresenter;
-    }
     public void SetWinner(string winner)
     {
         if (winner == "nobody")
