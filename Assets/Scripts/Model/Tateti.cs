@@ -34,7 +34,7 @@ public class Tateti
             }
         }
         Winner = null;
-
+        Win = false;
     }
 
     public void SaveUserChoice(int positionInArray)

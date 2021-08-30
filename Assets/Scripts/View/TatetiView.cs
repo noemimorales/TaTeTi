@@ -7,39 +7,86 @@ using UnityEngine.UI;
 
 public class TatetiView : MonoBehaviour, ITatetiView
 {
-    [SerializeField] private Button[] inputButtons;
-    [SerializeField] private Button playAgainButton;
-    [SerializeField] private Image[] crossImage;
-    [SerializeField] private Image[] circleImage;
-    [SerializeField] private TMP_Text player;
+    private TatetiPresenter tatetiPresenter = new TatetiPresenter();
+    private List<ButtonView> buttonsInGrid;
+
+    [SerializeField] public Button playAgainButton;
+    [SerializeField] public TMP_Text player;
     [SerializeField] private TMP_Text winPlayer;
+    [SerializeField] private Transform buttonsContainer;
+    [SerializeField] private ButtonView buttonPrefab;
 
-    private TatetiPresenter tatetiPresenter;
-
+    private string actualPlayer;
     private void Start()
     {
-        tatetiPresenter = new TatetiPresenter();
+        buttonsInGrid = new List<ButtonView>(buttonsContainer.GetComponentsInChildren<ButtonView>());
         tatetiPresenter.Initialize(this);
-        for (int i = 0; i < inputButtons.Length; i++)
-        {
-            crossImage[i].gameObject.SetActive(false);
-            circleImage[i].gameObject.SetActive(false);
-        }
         playAgainButton.gameObject.SetActive(false);
-        DetectButtonClick();
         playAgainButton.onClick.AddListener(CleanGame);
-
+        actualPlayer = IdentifyPlayerInView();
+        player.text = actualPlayer;
+        DetectButtonClick();
     }
+
+    public void InstantiateButtons(List<string> buttons)
+    {
+        for (int i = 0; i < buttons.Count; i++)
+        {
+            if (buttonsInGrid.Count < i)
+            {
+                buttonsInGrid.Add(Instantiate(buttonPrefab, buttonsContainer));
+            }
+            else
+            {
+                buttonsInGrid[i].gameObject.SetActive(true);
+            }
+            buttonsInGrid[i].Init();
+        }
+    }
+    private void DetectButtonClick()
+    {
+        for (int i = 0; i < buttonsInGrid.Count; i++)
+        {
+            ButtonAction(i);
+        }
+    }
+
+    public void ButtonAction(int positionInGame)
+    {
+        buttonsInGrid[positionInGame].selectedPosition.onClick.AddListener(() =>
+        {
+            buttonsInGrid[positionInGame].SetImageToButton(IdentifyPlayerInView());
+            DetectIsThereIsAWinner(positionInGame);
+        });
+    }
+
+  
+    public void DetectIsThereIsAWinner(int positionInGame)
+    {
+        if (tatetiPresenter.SaveUserChoice(positionInGame) != null)
+        {
+            playAgainButton.gameObject.SetActive(true);
+        }
+        actualPlayer = IdentifyPlayerInView();
+        player.text = actualPlayer;
+    }
+
+    public string IdentifyPlayerInView()
+    {
+        if (tatetiPresenter.IdentifyPlayer())
+        {
+            return "Player1";
+        }
+        else
+        {
+            return "Player2";
+        }
+    }
+
 
     private void CleanGame()
     {
-        tatetiPresenter = new TatetiPresenter();
         tatetiPresenter.Initialize(this);
-        for (int i = 0; i < inputButtons.Length; i++)
-        {
-            crossImage[i].gameObject.SetActive(false);
-            circleImage[i].gameObject.SetActive(false);
-        }
         winPlayer.text = "";
         tatetiPresenter.RestartGame();
         playAgainButton.gameObject.SetActive(false);
@@ -50,56 +97,11 @@ public class TatetiView : MonoBehaviour, ITatetiView
     {
         this.tatetiPresenter = tatetiPresenter;
     }
-    private void DetectButtonClick()
-    {
-        for (int i = 0; i < inputButtons.Length; i++)
-        {
-            ButtonAction(i);
-        }
-    }
 
-    private void ButtonAction(int positionInArray)
-    {
-        inputButtons[positionInArray].onClick.AddListener(() =>
-        {
-            SetImageToButton(positionInArray);
-            DetectIsThereIsAWinner(positionInArray);
-            IdentifyPlayerInView();
-        });
-    }
 
-    private void SetImageToButton(int positionInArray)
-    {
-        if (tatetiPresenter.IdentifyPlayer())
-        {
-            crossImage[positionInArray].gameObject.SetActive(true);
-        }
-        else
-        {
-            circleImage[positionInArray].gameObject.SetActive(true);
-        }
-    }
 
-    private void DetectIsThereIsAWinner(int positionInArray)
-    {
-        if (tatetiPresenter.SaveUserChoice(positionInArray) != null)
-        {
-            playAgainButton.gameObject.SetActive(true);
 
-        }
-    }
 
-    private void IdentifyPlayerInView()
-    {
-        if (tatetiPresenter.IdentifyPlayer())
-        {
-            player.text = "Player1";
-        }
-        else
-        {
-            player.text = "Player2";
-        }
-    }
 
     public void SetWinner(string winner)
     {

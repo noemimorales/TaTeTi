@@ -56,10 +56,11 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\View\ITatetiView.cs" />
     <Compile Include="Assets\Scripts\Model\Tateti.cs" />
     <Compile Include="Assets\Scripts\Presenter\TatetiPresenter.cs" />
     <Compile Include="Assets\Scripts\View\TatetiView.cs" />
-    <Compile Include="Assets\Scripts\View\ITatetiView.cs" />
+    <Compile Include="Assets\Scripts\View\ButtonView.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Scripts\Scripts.asmdef" />

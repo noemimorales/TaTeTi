@@ -8,21 +8,34 @@ public class TatetiPresenter
     private ITatetiView tatetiView;
     private Tateti tateti = new Tateti();
     string tatetiWinner=null;
+    
     int counterOfPlayedPositions = 0;
-
+    List<string> buttons = new List<string>
+    {
+        "TopLeft",
+        "TopCenter",
+        "TopRight",
+        "MiddleLeft",
+        "MiddleCenter",
+        "MiddleRight",
+        "BottomLeft",
+        "BottomCenter",
+        "BottomRight"
+    };
 
     public void Initialize(ITatetiView tatetiView)
     {
         this.tatetiView = tatetiView;
         tatetiView.Initialize(this);
-        tateti.IsFirstPlayer = true;
         tateti.CleanMatrix();
         tatetiWinner = null;
+        tatetiView.InstantiateButtons(buttons);
+        tateti.IsFirstPlayer = true;
     }
 
-    public string SaveUserChoice(int positionInArray)
+    public string SaveUserChoice(int positionInGame)
     {
-        tateti.SaveUserChoice(positionInArray);
+        tateti.SaveUserChoice(positionInGame);
         if(tateti.Winner!=null)
         {
             tatetiView.SetWinner(tateti.Winner);
