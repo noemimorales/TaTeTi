@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class TatetiView : MonoBehaviour, ITatetiView
 {
     private TatetiPresenter tatetiPresenter = new TatetiPresenter();
+    private CoordinatesPresenter coordinatesPresenter = new CoordinatesPresenter();
     private List<ButtonView> buttonsInGrid;
 
     [SerializeField] public Button playAgainButton;
@@ -21,6 +22,7 @@ public class TatetiView : MonoBehaviour, ITatetiView
     {
         buttonsInGrid = new List<ButtonView>(buttonsContainer.GetComponentsInChildren<ButtonView>());
         tatetiPresenter.Initialize(this);
+        coordinatesPresenter.Initialize(this);
         playAgainButton.gameObject.SetActive(false);
         playAgainButton.onClick.AddListener(CleanGame);
         actualPlayer = IdentifyPlayerInView();
@@ -87,8 +89,10 @@ public class TatetiView : MonoBehaviour, ITatetiView
     private void CleanGame()
     {
         tatetiPresenter.Initialize(this);
+        coordinatesPresenter.Initialize(this);
         winPlayer.text = "";
         tatetiPresenter.RestartGame();
+        coordinatesPresenter.RestartGame();
         playAgainButton.gameObject.SetActive(false);
 
     }

@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Tests\TatetiShould.cs" />
+    <Compile Include="Assets\Scripts\Tests\CoordinatesShould.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Scripts\Tests\Tests.asmdef" />

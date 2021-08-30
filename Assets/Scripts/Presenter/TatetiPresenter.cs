@@ -27,7 +27,7 @@ public class TatetiPresenter
     {
         this.tatetiView = tatetiView;
         tatetiView.Initialize(this);
-        tateti.CleanMatrix();
+        tateti.CleanWinner();
         tatetiWinner = null;
         tatetiView.InstantiateButtons(buttons);
         tateti.IsFirstPlayer = true;
@@ -57,9 +57,11 @@ public class TatetiPresenter
 
     public void RestartGame()
     {
-        tateti.IsFirstPlayer = true;
-        tateti.CleanMatrix();
+        this.tatetiView = tatetiView;
+        tatetiView.Initialize(this);
+        tateti.CleanWinner();
         tatetiWinner = null;
+        tatetiView.InstantiateButtons(buttons);
         counterOfPlayedPositions = 0;
     }
 }

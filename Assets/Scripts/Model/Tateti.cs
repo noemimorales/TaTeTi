@@ -5,10 +5,7 @@ using UnityEngine;
 
 public class Tateti 
 {
-    private const int SIZE = 3;
 
-    private string[,] matrix = new string[SIZE, SIZE];
-    public string[,] Matrix { get => matrix; set => matrix = value; }
     public bool IsFirstPlayer { get; set; }
     public string Winner { get; set; }
     public bool Win { get; set; }
@@ -24,25 +21,14 @@ public class Tateti
             "048",
             "246"
         };
-    public void CleanMatrix()
-    {
-        for (int column = 0; column < Matrix.GetLength(1); column++)
-        {
-            for (int row = 0; row < Matrix.GetLength(0); row++)
-            {
-                Matrix[row, column] = null;
-            }
-        }
-        Winner = null;
-        Win = false;
-    }
 
+    Coordinates coordinates = new Coordinates();
     public void SaveUserChoice(int positionInArray)
     {
         string player = PutNamePlayer(IsFirstPlayer);
-        int[] positionInMatrix = ObtainPositionInMatrix(positionInArray);
-        SavePositionInMatrix(player, positionInMatrix);
-        if(CheckIfIsTateti(Matrix, player))
+        int[] positionInMatrix = coordinates.ObtainPositionInMatrix(positionInArray);
+        coordinates.SavePositionInMatrix(player, positionInMatrix);
+        if(CheckIfIsTateti(coordinates.Matrix, player))
         {
             Winner=player;
         } else ChangeUser(IsFirstPlayer);
@@ -60,35 +46,18 @@ public class Tateti
         }
     }
 
-    public int[] ObtainPositionInMatrix(int positionInArray)
-    {
-        int x = GetXPosition(positionInArray);
-        int y = GETYPosition(positionInArray);
-        int[] positionInMatrix = { x, y };
-        return positionInMatrix;
-    }
 
-    private int GetXPosition(int positionInArray)
-    {
-        return positionInArray % SIZE;
-    }
-    private int GETYPosition(int positionInArray)
-    {
-        return positionInArray / SIZE;
-    }
+
     public void ChangeUser(bool isFirstPlayer)
     {
         IsFirstPlayer = !isFirstPlayer;
     }
 
-    public void SavePositionInMatrix(string player, int[] positionInMatrix)
-    {
-        Matrix[positionInMatrix[0], positionInMatrix[1]] = player;
-    }
+
 
     public bool CheckIfIsTateti(string[,] matrix, string player)
     {
-        string playedPositionsByPlayer = GetPlayerPositions(matrix, player);
+        string playedPositionsByPlayer = coordinates.GetPlayerPositions(matrix, player);
         char[] listOfPlayedPositionsByPlayer = playedPositionsByPlayer.ToCharArray();
         SearchCoincidens(winCombinations, listOfPlayedPositionsByPlayer);
         return Win;
@@ -96,7 +65,7 @@ public class Tateti
 
     public void SearchCoincidens(List<string> combinationsToWin, char[] playerSelections)
     {
-        int sumOfCoincidens;
+        int sumOfCoincidens = 0;
         foreach (string combinationToWin in combinationsToWin)
         {
             char[] listOfCombinationToWin = combinationToWin.ToCharArray();
@@ -116,25 +85,9 @@ public class Tateti
         }
     }
 
-    public string GetPlayerPositions(string[,] matrix, string player)
+    public void CleanWinner()
     {
-        string playerPositions = "";
-        for (int column = 0; column < matrix.GetLength(1); column++)
-        {
-            for (int row = 0; row < matrix.GetLength(0); row++)
-            {
-                if (matrix[row, column] == player)
-                {
-                    playerPositions += GetIndexFromCoordinates(row, column).ToString();
-                }
-            }
-        }
-        return playerPositions;
+        Winner = null;
+        Win = false;
     }
-
-    private int GetIndexFromCoordinates(int x, int y)
-    {
-        return x + y * SIZE;
-    }
-
 }
