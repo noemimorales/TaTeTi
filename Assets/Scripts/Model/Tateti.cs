@@ -23,33 +23,41 @@ public class Tateti
         };
 
     Coordinates coordinates = new Coordinates();
-    public void SaveUserChoice(int positionInArray)
+    GamePlayer gamePlayer1 = new GamePlayer();
+    GamePlayer gamePlayer2 = new GamePlayer();
+
+    public  Tateti()
     {
-        string player = PutNamePlayer(IsFirstPlayer);
+        gamePlayer1.NamePlayer = "Player1";
+        gamePlayer2.NamePlayer = "Player2";
+    }
+    public void SavePlayerChoice(int positionInArray)
+    {
+        GamePlayer player = DetectPlayer(IsFirstPlayer);
         int[] positionInMatrix = coordinates.ObtainPositionInMatrix(positionInArray);
-        coordinates.SavePositionInMatrix(player, positionInMatrix);
-        if(CheckIfIsTateti(coordinates.Matrix, player))
+        coordinates.SavePositionInMatrix(player.NamePlayer, positionInMatrix);
+        if(CheckIfIsTateti(coordinates.Matrix, player.NamePlayer))
         {
-            Winner=player;
+            Winner=player.NamePlayer;
             coordinates.CleanMatrix();
-        } else ChangeUser(IsFirstPlayer);
+        } else ChangePlayer(IsFirstPlayer);
     }
 
-    public string PutNamePlayer(bool isFirstPlayer)
+    public GamePlayer DetectPlayer(bool isFirstPlayer)
     {
         if (isFirstPlayer)
         {
-            return "Player1";
+            return gamePlayer1;
         }
         else
         {
-            return "Player2";
+            return gamePlayer2;
         }
     }
 
 
 
-    public void ChangeUser(bool isFirstPlayer)
+    public void ChangePlayer(bool isFirstPlayer)
     {
         IsFirstPlayer = !isFirstPlayer;
     }

@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\View\TatetiView.cs" />
     <Compile Include="Assets\Scripts\Model\Coordinates.cs" />
     <Compile Include="Assets\Scripts\View\ButtonView.cs" />
+    <Compile Include="Assets\Scripts\Model\GamePlayer.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Scripts\Scripts.asmdef" />

@@ -36,7 +36,7 @@ public class TatetiPresenter
 
     public string SaveUserChoice(int positionInGame)
     {
-        tateti.SaveUserChoice(positionInGame);
+        tateti.SavePlayerChoice(positionInGame);
         if(tateti.Winner!=null)
         {
             tatetiView.SetWinner(tateti.Winner);

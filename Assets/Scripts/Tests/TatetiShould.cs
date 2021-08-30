@@ -18,7 +18,7 @@ public class TatetiShould
     public void SavePlayer(string expectedPlayer, bool isPlayer1)
     {
         //Then
-        Assert.AreEqual(expectedPlayer, tateti.PutNamePlayer(isPlayer1));
+        Assert.AreEqual(expectedPlayer, tateti.DetectPlayer(isPlayer1));
     }
 
     [TestCase(false, true)]
@@ -26,7 +26,7 @@ public class TatetiShould
     public void ChangePlayerAfterPlay(bool expectedPlayer, bool isPlayer1)
     {
         //given
-        tateti.ChangeUser(isPlayer1);
+        tateti.ChangePlayer(isPlayer1);
         //Then
         Assert.AreEqual(expectedPlayer,tateti.IsFirstPlayer);
     }
