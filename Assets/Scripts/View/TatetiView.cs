@@ -20,7 +20,7 @@ public class TatetiView : MonoBehaviour, ITatetiView
     private void Start()
     {
         buttonsInGrid = new List<ButtonView>(buttonsContainer.GetComponentsInChildren<ButtonView>());
-        tatetiPresenter.Initialize(this);
+        tatetiPresenter.InitializeTateti(this);
         playAgainButton.gameObject.SetActive(false);
         playAgainButton.onClick.AddListener(CleanGame);
         actualPlayer = IdentifyPlayerInView();
@@ -86,22 +86,16 @@ public class TatetiView : MonoBehaviour, ITatetiView
 
     private void CleanGame()
     {
-        tatetiPresenter.Initialize(this);
         winPlayer.text = "";
         tatetiPresenter.RestartGame();
         playAgainButton.gameObject.SetActive(false);
 
     }
 
-    public void Initialize(TatetiPresenter tatetiPresenter)
+    public void InitializeTateti(TatetiPresenter tatetiPresenter)
     {
         this.tatetiPresenter = tatetiPresenter;
     }
-
-
-
-
-
 
     public void SetWinner(string winner)
     {

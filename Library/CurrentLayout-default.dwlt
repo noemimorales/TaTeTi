@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
-    y: 43
-    width: 1920
-    height: 997
+    x: 1920
+    y: 42.666668
+    width: 1280
+    height: 637.3334
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -44,8 +44,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 997
+    width: 1280
+    height: 637.3334
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1280
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 977
-    width: 1920
+    y: 617.3334
+    width: 1280
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -117,12 +117,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1920
-    height: 947
-  m_MinSize: {x: 679, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+    width: 1280
+    height: 587.3334
+  m_MinSize: {x: 502, y: 342}
+  m_MaxSize: {x: 12002, y: 8042}
   vertical: 0
-  controlID: 101
+  controlID: 4763
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,12 +142,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1502
-    height: 947
-  m_MinSize: {x: 403, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
+    width: 1001.3333
+    height: 587.3334
+  m_MinSize: {x: 402, y: 342}
+  m_MaxSize: {x: 8002, y: 8042}
   vertical: 1
-  controlID: 102
+  controlID: 4789
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,12 +167,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1502
-    height: 689
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+    width: 1001.3333
+    height: 282
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 103
+  controlID: 4746
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,10 +190,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 225
-    height: 689
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 292.66666
+    height: 282
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -214,10 +214,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 225
+    x: 292.66666
     y: 0
-    width: 1277
-    height: 689
+    width: 708.6666
+    height: 282
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 12}
@@ -242,9 +242,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 689
-    width: 1502
-    height: 258
+    y: 282
+    width: 1001.3333
+    height: 305.33337
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
@@ -263,23 +263,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1502
+    x: 1001.3333
     y: 0
-    width: 418
-    height: 947
-  m_MinSize: {x: 276, y: 71}
+    width: 278.6667
+    height: 587.3334
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -296,14 +296,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 225
-    y: 73
-    width: 1275
-    height: 668
+    x: 2212.6667
+    y: 72.66667
+    width: 706.6666
+    height: 261
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -311,7 +311,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1275, y: 647}
+  m_TargetSize: {x: 706.6666, y: 240}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -326,10 +326,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -637.5
-    m_HBaseRangeMax: 637.5
-    m_VBaseRangeMin: -323.5
-    m_VBaseRangeMax: 323.5
+    m_HBaseRangeMin: -235.55554
+    m_HBaseRangeMax: 235.55554
+    m_VBaseRangeMin: -80
+    m_VBaseRangeMax: 80
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -347,23 +347,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1275
-      height: 647
+      width: 706.6666
+      height: 240
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 637.5, y: 323.5}
+    m_Translation: {x: 353.3333, y: 120}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -637.5
-      y: -323.5
-      width: 1275
-      height: 647
+      x: -353.3333
+      y: -120
+      width: 706.6666
+      height: 240
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1275, y: 668}
+  m_LastWindowPixelSize: {x: 1060, y: 391.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000000000000
@@ -385,21 +385,21 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 73
-    width: 224
-    height: 668
+    x: 1920
+    y: 72.66667
+    width: 291.66666
+    height: 261
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 40fbffffec3f0000
+      m_ExpandedIDs: c8dffffff2e3ffffc4f1ffff68f3ffff40fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -439,7 +439,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -459,9 +459,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 310.27408, y: 56.410736, z: -714.7202}
+    m_Target: {x: 573.68146, y: 308.67258, z: -757.63055}
     speed: 2
-    m_Value: {x: 277.54608, y: 40.451344, z: -712.4005}
+    m_Value: {x: 573.68146, y: 308.67258, z: -757.63055}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -512,9 +512,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 615.3726
+    m_Target: 367.09085
     speed: 2
-    m_Value: 644.36926
+    m_Value: 367.09085
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -555,14 +555,14 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 1920
-    y: 388.6667
-    width: 782.3333
-    height: 250
+    y: 354.6667
+    width: 1000.3333
+    height: 284.33337
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -577,22 +577,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Tests
+    - Assets/Scripts/Model
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Tests
+  - Assets/Scripts/Model
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\_mio\katas\TaTeTi
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f4410000
-    m_LastClickedID: 16884
-    m_ExpandedIDs: 0000000004410000
+    m_SelectedIDs: f6400000
+    m_LastClickedID: 16630
+    m_ExpandedIDs: 00000000da40000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -620,7 +620,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000004410000
+    m_ExpandedIDs: 00000000da40000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -692,14 +692,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 762
-    width: 1501
-    height: 237
+    x: 1920
+    y: 354.6667
+    width: 1000.3333
+    height: 284.33337
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &17
 MonoBehaviour:
@@ -717,7 +717,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -758,13 +758,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2703.3335
+    x: 2921.3335
     y: 72.66667
-    width: 495.6667
-    height: 566
+    width: 277.6667
+    height: 566.3334
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 4286
+    ID: 4824
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -848,7 +848,7 @@ MonoBehaviour:
       name: TaTeTi
       fullName: TaTeTi
       resultStatus: 1
-      duration: 0.1322971
+      duration: 0.1185506
       messages: 
       output: 
       stacktrace: 
@@ -864,7 +864,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: D:/_mio/katas/TaTeTi/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.0811201
+      duration: 0.0893678
       messages: 
       output: 
       stacktrace: 
@@ -876,11 +876,399 @@ MonoBehaviour:
       parentId: 1000
       parentUniqueId: '[TaTeTi][suite]'
     - id: 1001
+      uniqueId: Tests.dll/[Tests][CoordinatesShould][suite]
+      name: CoordinatesShould
+      fullName: CoordinatesShould
+      resultStatus: 1
+      duration: 0.0655714
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1023
+      parentUniqueId: '[Tests][D:/_mio/katas/TaTeTi/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1023
+      uniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.GetPlayerPositions]
+      name: GetPlayerPositions
+      fullName: CoordinatesShould.GetPlayerPositions
+      resultStatus: 1
+      duration: 0.0158672
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][CoordinatesShould][suite]
+    - id: 1022
+      uniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.HasAThreeByThreeMatrix]
+      name: HasAThreeByThreeMatrix
+      fullName: CoordinatesShould.HasAThreeByThreeMatrix
+      resultStatus: 1
+      duration: 0.00166
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][CoordinatesShould][suite]
+    - id: 1011
+      uniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.ObtainPositionInMatrix][suite]
+      name: ObtainPositionInMatrix
+      fullName: CoordinatesShould.ObtainPositionInMatrix
+      resultStatus: 1
+      duration: 0.0193394
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][CoordinatesShould][suite]
+    - id: 1002
+      uniqueId: Tests.dll/CoordinatesShould/ObtainPositionInMatrix/[Tests][CoordinatesShould.ObtainPositionInMatrix(0,0,0)]
+      name: ObtainPositionInMatrix(0,0,0)
+      fullName: CoordinatesShould.ObtainPositionInMatrix(0,0,0)
+      resultStatus: 1
+      duration: 0.0011567
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.ObtainPositionInMatrix][suite]
+    - id: 1003
+      uniqueId: Tests.dll/CoordinatesShould/ObtainPositionInMatrix/[Tests][CoordinatesShould.ObtainPositionInMatrix(1,0,1)]
+      name: ObtainPositionInMatrix(1,0,1)
+      fullName: CoordinatesShould.ObtainPositionInMatrix(1,0,1)
+      resultStatus: 1
+      duration: 0.0004101
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.ObtainPositionInMatrix][suite]
+    - id: 1004
+      uniqueId: Tests.dll/CoordinatesShould/ObtainPositionInMatrix/[Tests][CoordinatesShould.ObtainPositionInMatrix(2,0,2)]
+      name: ObtainPositionInMatrix(2,0,2)
+      fullName: CoordinatesShould.ObtainPositionInMatrix(2,0,2)
+      resultStatus: 1
+      duration: 0.0003191
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.ObtainPositionInMatrix][suite]
+    - id: 1005
+      uniqueId: Tests.dll/CoordinatesShould/ObtainPositionInMatrix/[Tests][CoordinatesShould.ObtainPositionInMatrix(0,1,3)]
+      name: ObtainPositionInMatrix(0,1,3)
+      fullName: CoordinatesShould.ObtainPositionInMatrix(0,1,3)
+      resultStatus: 1
+      duration: 0.0003374
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.ObtainPositionInMatrix][suite]
+    - id: 1006
+      uniqueId: Tests.dll/CoordinatesShould/ObtainPositionInMatrix/[Tests][CoordinatesShould.ObtainPositionInMatrix(1,1,4)]
+      name: ObtainPositionInMatrix(1,1,4)
+      fullName: CoordinatesShould.ObtainPositionInMatrix(1,1,4)
+      resultStatus: 1
+      duration: 0.0003484
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.ObtainPositionInMatrix][suite]
+    - id: 1007
+      uniqueId: Tests.dll/CoordinatesShould/ObtainPositionInMatrix/[Tests][CoordinatesShould.ObtainPositionInMatrix(2,1,5)]
+      name: ObtainPositionInMatrix(2,1,5)
+      fullName: CoordinatesShould.ObtainPositionInMatrix(2,1,5)
+      resultStatus: 1
+      duration: 0.0004716
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.ObtainPositionInMatrix][suite]
+    - id: 1008
+      uniqueId: Tests.dll/CoordinatesShould/ObtainPositionInMatrix/[Tests][CoordinatesShould.ObtainPositionInMatrix(0,2,6)]
+      name: ObtainPositionInMatrix(0,2,6)
+      fullName: CoordinatesShould.ObtainPositionInMatrix(0,2,6)
+      resultStatus: 1
+      duration: 0.0002559
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.ObtainPositionInMatrix][suite]
+    - id: 1009
+      uniqueId: Tests.dll/CoordinatesShould/ObtainPositionInMatrix/[Tests][CoordinatesShould.ObtainPositionInMatrix(1,2,7)]
+      name: ObtainPositionInMatrix(1,2,7)
+      fullName: CoordinatesShould.ObtainPositionInMatrix(1,2,7)
+      resultStatus: 1
+      duration: 0.0002553
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.ObtainPositionInMatrix][suite]
+    - id: 1010
+      uniqueId: Tests.dll/CoordinatesShould/ObtainPositionInMatrix/[Tests][CoordinatesShould.ObtainPositionInMatrix(2,2,8)]
+      name: ObtainPositionInMatrix(2,2,8)
+      fullName: CoordinatesShould.ObtainPositionInMatrix(2,2,8)
+      resultStatus: 1
+      duration: 0.0002247
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.ObtainPositionInMatrix][suite]
+    - id: 1021
+      uniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.SavePositionInMatrix][suite]
+      name: SavePositionInMatrix
+      fullName: CoordinatesShould.SavePositionInMatrix
+      resultStatus: 1
+      duration: 0.0134453
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][CoordinatesShould][suite]
+    - id: 1012
+      uniqueId: Tests.dll/CoordinatesShould/SavePositionInMatrix/[Tests][CoordinatesShould.SavePositionInMatrix("Player1",0,0,0)]
+      name: SavePositionInMatrix("Player1",0,0,0)
+      fullName: CoordinatesShould.SavePositionInMatrix("Player1",0,0,0)
+      resultStatus: 1
+      duration: 0.0009347
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.SavePositionInMatrix][suite]
+    - id: 1013
+      uniqueId: Tests.dll/CoordinatesShould/SavePositionInMatrix/[Tests][CoordinatesShould.SavePositionInMatrix("Player1",1,0,1)]
+      name: SavePositionInMatrix("Player1",1,0,1)
+      fullName: CoordinatesShould.SavePositionInMatrix("Player1",1,0,1)
+      resultStatus: 1
+      duration: 0.000388
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.SavePositionInMatrix][suite]
+    - id: 1014
+      uniqueId: Tests.dll/CoordinatesShould/SavePositionInMatrix/[Tests][CoordinatesShould.SavePositionInMatrix("Player1",2,0,2)]
+      name: SavePositionInMatrix("Player1",2,0,2)
+      fullName: CoordinatesShould.SavePositionInMatrix("Player1",2,0,2)
+      resultStatus: 1
+      duration: 0.0002185
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.SavePositionInMatrix][suite]
+    - id: 1015
+      uniqueId: Tests.dll/CoordinatesShould/SavePositionInMatrix/[Tests][CoordinatesShould.SavePositionInMatrix("Player1",0,1,3)]
+      name: SavePositionInMatrix("Player1",0,1,3)
+      fullName: CoordinatesShould.SavePositionInMatrix("Player1",0,1,3)
+      resultStatus: 1
+      duration: 0.0002236
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.SavePositionInMatrix][suite]
+    - id: 1016
+      uniqueId: Tests.dll/CoordinatesShould/SavePositionInMatrix/[Tests][CoordinatesShould.SavePositionInMatrix("Player1",1,1,4)]
+      name: SavePositionInMatrix("Player1",1,1,4)
+      fullName: CoordinatesShould.SavePositionInMatrix("Player1",1,1,4)
+      resultStatus: 1
+      duration: 0.0002371
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.SavePositionInMatrix][suite]
+    - id: 1017
+      uniqueId: Tests.dll/CoordinatesShould/SavePositionInMatrix/[Tests][CoordinatesShould.SavePositionInMatrix("Player1",2,1,5)]
+      name: SavePositionInMatrix("Player1",2,1,5)
+      fullName: CoordinatesShould.SavePositionInMatrix("Player1",2,1,5)
+      resultStatus: 1
+      duration: 0.0002551
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.SavePositionInMatrix][suite]
+    - id: 1018
+      uniqueId: Tests.dll/CoordinatesShould/SavePositionInMatrix/[Tests][CoordinatesShould.SavePositionInMatrix("Player1",0,2,6)]
+      name: SavePositionInMatrix("Player1",0,2,6)
+      fullName: CoordinatesShould.SavePositionInMatrix("Player1",0,2,6)
+      resultStatus: 1
+      duration: 0.0003077
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.SavePositionInMatrix][suite]
+    - id: 1019
+      uniqueId: Tests.dll/CoordinatesShould/SavePositionInMatrix/[Tests][CoordinatesShould.SavePositionInMatrix("Player1",1,2,7)]
+      name: SavePositionInMatrix("Player1",1,2,7)
+      fullName: CoordinatesShould.SavePositionInMatrix("Player1",1,2,7)
+      resultStatus: 1
+      duration: 0.0001738
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.SavePositionInMatrix][suite]
+    - id: 1020
+      uniqueId: Tests.dll/CoordinatesShould/SavePositionInMatrix/[Tests][CoordinatesShould.SavePositionInMatrix("Player1",2,2,8)]
+      name: SavePositionInMatrix("Player1",2,2,8)
+      fullName: CoordinatesShould.SavePositionInMatrix("Player1",2,2,8)
+      resultStatus: 1
+      duration: 0.0001552
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: Tests.dll/CoordinatesShould/[Tests][CoordinatesShould.SavePositionInMatrix][suite]
+    - id: 1001
       uniqueId: Tests.dll/[Tests][TatetiShould][suite]
       name: TatetiShould
       fullName: TatetiShould
       resultStatus: 1
-      duration: 0.0784367
+      duration: 0.0194463
       messages: 
       output: 
       stacktrace: 
@@ -896,7 +1284,7 @@ MonoBehaviour:
       name: ChangePlayerAfterPlay
       fullName: TatetiShould.ChangePlayerAfterPlay
       resultStatus: 1
-      duration: 0.0277479
+      duration: 0.0038881
       messages: 
       output: 
       stacktrace: 
@@ -912,7 +1300,7 @@ MonoBehaviour:
       name: ChangePlayerAfterPlay(False,True)
       fullName: TatetiShould.ChangePlayerAfterPlay(False,True)
       resultStatus: 1
-      duration: 0.0203505
+      duration: 0.0020926
       messages: 
       output: 
       stacktrace: 
@@ -929,7 +1317,7 @@ MonoBehaviour:
       name: ChangePlayerAfterPlay(True,False)
       fullName: TatetiShould.ChangePlayerAfterPlay(True,False)
       resultStatus: 1
-      duration: 0.0004514
+      duration: 0.0002774
       messages: 
       output: 
       stacktrace: 
@@ -946,7 +1334,7 @@ MonoBehaviour:
       name: CheckIfIsTateti
       fullName: TatetiShould.CheckIfIsTateti
       resultStatus: 1
-      duration: 0.0013458
+      duration: 0.0003364
       messages: 
       output: 
       stacktrace: 
@@ -958,215 +1346,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/[Tests][TatetiShould][suite]
-    - id: 1031
-      uniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.GetPlayerPositions]
-      name: GetPlayerPositions
-      fullName: TatetiShould.GetPlayerPositions
-      resultStatus: 1
-      duration: 0.000425
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/[Tests][TatetiShould][suite]
-    - id: 1002
-      uniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.HasAThreeByThreeMatrix]
-      name: HasAThreeByThreeMatrix
-      fullName: TatetiShould.HasAThreeByThreeMatrix
-      resultStatus: 1
-      duration: 0.0009403
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/[Tests][TatetiShould][suite]
-    - id: 1018
-      uniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.ObtainPositionInMatrix][suite]
-      name: ObtainPositionInMatrix
-      fullName: TatetiShould.ObtainPositionInMatrix
-      resultStatus: 1
-      duration: 0.0138423
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1001
-      parentUniqueId: Tests.dll/[Tests][TatetiShould][suite]
-    - id: 1009
-      uniqueId: Tests.dll/TatetiShould/ObtainPositionInMatrix/[Tests][TatetiShould.ObtainPositionInMatrix(0,0,0)]
-      name: ObtainPositionInMatrix(0,0,0)
-      fullName: TatetiShould.ObtainPositionInMatrix(0,0,0)
-      resultStatus: 1
-      duration: 0.0018358
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1018
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.ObtainPositionInMatrix][suite]
-    - id: 1010
-      uniqueId: Tests.dll/TatetiShould/ObtainPositionInMatrix/[Tests][TatetiShould.ObtainPositionInMatrix(1,0,1)]
-      name: ObtainPositionInMatrix(1,0,1)
-      fullName: TatetiShould.ObtainPositionInMatrix(1,0,1)
-      resultStatus: 1
-      duration: 0.0003569
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1018
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.ObtainPositionInMatrix][suite]
-    - id: 1011
-      uniqueId: Tests.dll/TatetiShould/ObtainPositionInMatrix/[Tests][TatetiShould.ObtainPositionInMatrix(2,0,2)]
-      name: ObtainPositionInMatrix(2,0,2)
-      fullName: TatetiShould.ObtainPositionInMatrix(2,0,2)
-      resultStatus: 1
-      duration: 0.0002253
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1018
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.ObtainPositionInMatrix][suite]
-    - id: 1012
-      uniqueId: Tests.dll/TatetiShould/ObtainPositionInMatrix/[Tests][TatetiShould.ObtainPositionInMatrix(0,1,3)]
-      name: ObtainPositionInMatrix(0,1,3)
-      fullName: TatetiShould.ObtainPositionInMatrix(0,1,3)
-      resultStatus: 1
-      duration: 0.0001971
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1018
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.ObtainPositionInMatrix][suite]
-    - id: 1013
-      uniqueId: Tests.dll/TatetiShould/ObtainPositionInMatrix/[Tests][TatetiShould.ObtainPositionInMatrix(1,1,4)]
-      name: ObtainPositionInMatrix(1,1,4)
-      fullName: TatetiShould.ObtainPositionInMatrix(1,1,4)
-      resultStatus: 1
-      duration: 0.0001887
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1018
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.ObtainPositionInMatrix][suite]
-    - id: 1014
-      uniqueId: Tests.dll/TatetiShould/ObtainPositionInMatrix/[Tests][TatetiShould.ObtainPositionInMatrix(2,1,5)]
-      name: ObtainPositionInMatrix(2,1,5)
-      fullName: TatetiShould.ObtainPositionInMatrix(2,1,5)
-      resultStatus: 1
-      duration: 0.0003062
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1018
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.ObtainPositionInMatrix][suite]
-    - id: 1015
-      uniqueId: Tests.dll/TatetiShould/ObtainPositionInMatrix/[Tests][TatetiShould.ObtainPositionInMatrix(0,2,6)]
-      name: ObtainPositionInMatrix(0,2,6)
-      fullName: TatetiShould.ObtainPositionInMatrix(0,2,6)
-      resultStatus: 1
-      duration: 0.000284
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1018
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.ObtainPositionInMatrix][suite]
-    - id: 1016
-      uniqueId: Tests.dll/TatetiShould/ObtainPositionInMatrix/[Tests][TatetiShould.ObtainPositionInMatrix(1,2,7)]
-      name: ObtainPositionInMatrix(1,2,7)
-      fullName: TatetiShould.ObtainPositionInMatrix(1,2,7)
-      resultStatus: 1
-      duration: 0.0003534
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1018
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.ObtainPositionInMatrix][suite]
-    - id: 1017
-      uniqueId: Tests.dll/TatetiShould/ObtainPositionInMatrix/[Tests][TatetiShould.ObtainPositionInMatrix(2,2,8)]
-      name: ObtainPositionInMatrix(2,2,8)
-      fullName: TatetiShould.ObtainPositionInMatrix(2,2,8)
-      resultStatus: 1
-      duration: 0.0004225
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1018
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.ObtainPositionInMatrix][suite]
     - id: 1005
       uniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.SavePlayer][suite]
       name: SavePlayer
       fullName: TatetiShould.SavePlayer
       resultStatus: 1
-      duration: 0.0064691
+      duration: 0.0075314
       messages: 
       output: 
       stacktrace: 
@@ -1182,7 +1367,7 @@ MonoBehaviour:
       name: SavePlayer("Player1",True)
       fullName: TatetiShould.SavePlayer("Player1",True)
       resultStatus: 1
-      duration: 0.000531
+      duration: 0.0005873
       messages: 
       output: 
       stacktrace: 
@@ -1199,7 +1384,7 @@ MonoBehaviour:
       name: SavePlayer("Player2",False)
       fullName: TatetiShould.SavePlayer("Player2",False)
       resultStatus: 1
-      duration: 0.0001957
+      duration: 0.000327
       messages: 
       output: 
       stacktrace: 
@@ -1211,181 +1396,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1005
       parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.SavePlayer][suite]
-    - id: 1028
-      uniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.SavePositionInMatrix][suite]
-      name: SavePositionInMatrix
-      fullName: TatetiShould.SavePositionInMatrix
-      resultStatus: 1
-      duration: 0.0132834
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1001
-      parentUniqueId: Tests.dll/[Tests][TatetiShould][suite]
-    - id: 1019
-      uniqueId: Tests.dll/TatetiShould/SavePositionInMatrix/[Tests][TatetiShould.SavePositionInMatrix("Player1",0,0,0)]
-      name: SavePositionInMatrix("Player1",0,0,0)
-      fullName: TatetiShould.SavePositionInMatrix("Player1",0,0,0)
-      resultStatus: 1
-      duration: 0.0009985
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1028
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.SavePositionInMatrix][suite]
-    - id: 1020
-      uniqueId: Tests.dll/TatetiShould/SavePositionInMatrix/[Tests][TatetiShould.SavePositionInMatrix("Player1",1,0,1)]
-      name: SavePositionInMatrix("Player1",1,0,1)
-      fullName: TatetiShould.SavePositionInMatrix("Player1",1,0,1)
-      resultStatus: 1
-      duration: 0.0009417
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1028
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.SavePositionInMatrix][suite]
-    - id: 1021
-      uniqueId: Tests.dll/TatetiShould/SavePositionInMatrix/[Tests][TatetiShould.SavePositionInMatrix("Player1",2,0,2)]
-      name: SavePositionInMatrix("Player1",2,0,2)
-      fullName: TatetiShould.SavePositionInMatrix("Player1",2,0,2)
-      resultStatus: 1
-      duration: 0.0003561
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1028
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.SavePositionInMatrix][suite]
-    - id: 1022
-      uniqueId: Tests.dll/TatetiShould/SavePositionInMatrix/[Tests][TatetiShould.SavePositionInMatrix("Player1",0,1,3)]
-      name: SavePositionInMatrix("Player1",0,1,3)
-      fullName: TatetiShould.SavePositionInMatrix("Player1",0,1,3)
-      resultStatus: 1
-      duration: 0.0003119
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1028
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.SavePositionInMatrix][suite]
-    - id: 1023
-      uniqueId: Tests.dll/TatetiShould/SavePositionInMatrix/[Tests][TatetiShould.SavePositionInMatrix("Player1",1,1,4)]
-      name: SavePositionInMatrix("Player1",1,1,4)
-      fullName: TatetiShould.SavePositionInMatrix("Player1",1,1,4)
-      resultStatus: 1
-      duration: 0.0001869
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1028
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.SavePositionInMatrix][suite]
-    - id: 1024
-      uniqueId: Tests.dll/TatetiShould/SavePositionInMatrix/[Tests][TatetiShould.SavePositionInMatrix("Player1",2,1,5)]
-      name: SavePositionInMatrix("Player1",2,1,5)
-      fullName: TatetiShould.SavePositionInMatrix("Player1",2,1,5)
-      resultStatus: 1
-      duration: 0.0002098
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1028
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.SavePositionInMatrix][suite]
-    - id: 1025
-      uniqueId: Tests.dll/TatetiShould/SavePositionInMatrix/[Tests][TatetiShould.SavePositionInMatrix("Player1",0,2,6)]
-      name: SavePositionInMatrix("Player1",0,2,6)
-      fullName: TatetiShould.SavePositionInMatrix("Player1",0,2,6)
-      resultStatus: 1
-      duration: 0.0001895
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1028
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.SavePositionInMatrix][suite]
-    - id: 1026
-      uniqueId: Tests.dll/TatetiShould/SavePositionInMatrix/[Tests][TatetiShould.SavePositionInMatrix("Player1",1,2,7)]
-      name: SavePositionInMatrix("Player1",1,2,7)
-      fullName: TatetiShould.SavePositionInMatrix("Player1",1,2,7)
-      resultStatus: 1
-      duration: 0.0002993
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1028
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.SavePositionInMatrix][suite]
-    - id: 1027
-      uniqueId: Tests.dll/TatetiShould/SavePositionInMatrix/[Tests][TatetiShould.SavePositionInMatrix("Player1",2,2,8)]
-      name: SavePositionInMatrix("Player1",2,2,8)
-      fullName: TatetiShould.SavePositionInMatrix("Player1",2,2,8)
-      resultStatus: 1
-      duration: 0.0002323
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1028
-      parentUniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.SavePositionInMatrix][suite]
     - id: 1030
       uniqueId: Tests.dll/TatetiShould/[Tests][TatetiShould.SearchCoincidens]
       name: SearchCoincidens
       fullName: TatetiShould.SearchCoincidens
       resultStatus: 1
-      duration: 0.0004452
+      duration: 0.0005678
       messages: 
       output: 
       stacktrace: 
@@ -1397,13 +1413,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/[Tests][TatetiShould][suite]
-    m_ResultText: CheckIfIsTateti (0,001s)
+    m_ResultText: CheckIfIsTateti (0,000s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: d62287ac
       m_LastClickedID: -1400429866
-      m_ExpandedIDs: 5377038197f44db0410ef0c4f5d2b4e61eca10fe8131241d28cab83b3b09603cffffff7f
+      m_ExpandedIDs: 537703817542669e97f44db0410ef0c4f5d2b4e61eca10fe8131241d28cab83b3b09603cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
