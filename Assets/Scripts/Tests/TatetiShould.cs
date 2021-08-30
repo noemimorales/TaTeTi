@@ -13,13 +13,13 @@ public class TatetiShould
         tateti = new Tateti();
     }
     
-    [TestCase("Player1",true)]
-    [TestCase("Player2", false)]
-    public void SavePlayer(string expectedPlayer, bool isPlayer1)
-    {
-        //Then
-        Assert.AreEqual(expectedPlayer, tateti.DetectPlayer(isPlayer1));
-    }
+    //[TestCase("Player1",true)]
+    //[TestCase("Player2", false)]
+    //public void SavePlayer(string expectedPlayer, bool isPlayer1)
+    //{
+    //    //Then
+    //    Assert.AreEqual(expectedPlayer, tateti.DetectPlayer(isPlayer1));
+    //}
 
     [TestCase(false, true)]
     [TestCase(true, false)]
