@@ -37,9 +37,9 @@ public class TatetiShould
         //given
         Coordinates coordinates = new Coordinates();
         string player;
+        player = "Player1";
 
         //when
-        player = "Player1";
         coordinates.Matrix[0, 0] = player;
         coordinates.Matrix[1, 0] = player;
         coordinates.Matrix[2, 0] = player;

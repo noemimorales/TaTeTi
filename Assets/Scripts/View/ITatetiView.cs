@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public interface ITatetiView
@@ -6,4 +7,6 @@ public interface ITatetiView
     void InitializeTateti(TatetiPresenter tatetiPresenter);
     void SetWinner(string winner);
     void InstantiateButtons(List<string> buttons);
+    event Action DidOnLoad;
+    event Action DidOnDestroy;
 }

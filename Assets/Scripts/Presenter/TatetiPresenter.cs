@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Web.UI.WebControls;
 using UnityEngine;
 
 public class TatetiPresenter
@@ -24,9 +25,30 @@ public class TatetiPresenter
         "BottomRight"
     };
 
-    public void InitializeTateti(ITatetiView tatetiView)
+    public TatetiPresenter(TatetiView view)
     {
-        this.tatetiView = tatetiView;
+        tatetiView = view;
+        tatetiView.DidOnLoad += Load;
+        tatetiView.DidOnDestroy += OnDestroy;
+    }
+
+    private void OnDestroy()
+    {
+        tatetiView.DidOnLoad -= Load;
+        tatetiView.DidOnDestroy -= OnDestroy;
+    }
+
+    public void ListenPlay()
+    {
+        if (SaveUserChoice(positionInGame) != null)
+        {
+            tatetiView.EnablePlayAgain();
+        }
+    }
+
+
+    private void Load()
+    {
         tatetiView.InitializeTateti(this);
         tateti.CleanWinner();
         tatetiWinner = null;

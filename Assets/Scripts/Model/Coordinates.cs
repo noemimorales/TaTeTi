@@ -1,4 +1,6 @@
-﻿public class Coordinates
+﻿using System;
+
+public class Coordinates
 {
     private const int SIZE = 3;
     private string[,] matrix = new string[SIZE, SIZE];
@@ -44,17 +46,23 @@
 
     public string GetPlayerPositions(string[,] matrix, string player)
     {
-        string playerPositions = "";
-        for (int column = 0; column < matrix.GetLength(1); column++)
-        {
-            for (int row = 0; row < matrix.GetLength(0); row++)
+
+            string playerPositions = "";
+            for (int column = 0; column < matrix.GetLength(1); column++)
             {
-                if (matrix[row, column] == player)
+                for (int row = 0; row < matrix.GetLength(0); row++)
                 {
-                    playerPositions += GetIndexFromCoordinates(row, column).ToString();
+                    if (matrix[row, column] == player)
+                    {
+                        playerPositions += GetIndexFromCoordinates(row, column).ToString();
+                    }
                 }
             }
-        }
-        return playerPositions;
+
+            if (playerPositions.Contains("a"))
+                throw new Exception("");
+            
+            return playerPositions;
+
     }
 }

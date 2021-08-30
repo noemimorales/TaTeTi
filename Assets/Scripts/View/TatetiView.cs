@@ -1,13 +1,12 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
+using DefaultNamespace;
 using TMPro;
-using UnityEngine;
 using UnityEngine.UI;
 
-public class TatetiView : MonoBehaviour, ITatetiView
+public class TatetiView : ITatetiView
 {
-    private TatetiPresenter tatetiPresenter = new TatetiPresenter();
     private List<ButtonView> buttonsInGrid;
 
     [SerializeField] public Button playAgainButton;
@@ -15,17 +14,30 @@ public class TatetiView : MonoBehaviour, ITatetiView
     [SerializeField] private TMP_Text winPlayer;
     [SerializeField] private Transform buttonsContainer;
     [SerializeField] private ButtonView buttonPrefab;
+    public event Action DidOnLoad = () => { }; 
+    public event Action DidOnDestroy = () => { }; 
 
     private string actualPlayer;
+
+    void OnLoad()
+    {
+        DidOnLoad();
+    }
+    
+    void OnDestroy()
+    {
+        DidOnDestroy();
+    }
+
     private void Start()
     {
         buttonsInGrid = new List<ButtonView>(buttonsContainer.GetComponentsInChildren<ButtonView>());
-        tatetiPresenter.InitializeTateti(this);
+        PresenterInitializer.Init(this);
         playAgainButton.gameObject.SetActive(false);
         playAgainButton.onClick.AddListener(CleanGame);
         actualPlayer = IdentifyPlayerInView();
         player.text = actualPlayer;
-        DetectButtonClick();
+        DetectButtonClick();new Point(0,0)
     }
 
     public void InstantiateButtons(List<string> buttons)
@@ -43,6 +55,7 @@ public class TatetiView : MonoBehaviour, ITatetiView
             buttonsInGrid[i].Init();
         }
     }
+
     private void DetectButtonClick()
     {
         for (int i = 0; i < buttonsInGrid.Count; i++)
@@ -65,10 +78,15 @@ public class TatetiView : MonoBehaviour, ITatetiView
     {
         if (tatetiPresenter.SaveUserChoice(positionInGame) != null)
         {
-            playAgainButton.gameObject.SetActive(true);
+            EnablePlayAgain();
         }
         actualPlayer = IdentifyPlayerInView();
         player.text = actualPlayer;
+    }
+
+    private void EnablePlayAgain()
+    {
+        playAgainButton.gameObject.SetActive(true);
     }
 
     public string IdentifyPlayerInView()

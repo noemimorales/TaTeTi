@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
@@ -63,6 +64,7 @@ public class CoordinatesShould
         //then
         Assert.AreEqual(expectedMatrix.GetLength(0), resultMatrix.GetLength(0));
         Assert.AreEqual(expectedMatrix.GetLength(1), resultMatrix.GetLength(1));
+        
     }
 
     [Test]
