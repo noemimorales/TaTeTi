@@ -5,8 +5,12 @@ using UnityEngine;
 public class CoordinatesPresenter 
 {
     private Coordinates coordinates = new Coordinates();
-    public void Initialize(ITatetiView tatetiView)
+    private ITatetiView tatetiView;
+
+    public void InitializeCoordinates(ITatetiView tatetiView)
     {
+        this.tatetiView = tatetiView;
+        tatetiView.InitializeCoordinates(this);
         coordinates.CleanMatrix();
     }
     public void RestartGame()

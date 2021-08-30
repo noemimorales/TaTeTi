@@ -21,8 +21,8 @@ public class TatetiView : MonoBehaviour, ITatetiView
     private void Start()
     {
         buttonsInGrid = new List<ButtonView>(buttonsContainer.GetComponentsInChildren<ButtonView>());
-        tatetiPresenter.Initialize(this);
-        coordinatesPresenter.Initialize(this);
+        tatetiPresenter.InitializeTateti(this);
+        coordinatesPresenter.InitializeCoordinates(this);
         playAgainButton.gameObject.SetActive(false);
         playAgainButton.onClick.AddListener(CleanGame);
         actualPlayer = IdentifyPlayerInView();
@@ -88,8 +88,6 @@ public class TatetiView : MonoBehaviour, ITatetiView
 
     private void CleanGame()
     {
-        tatetiPresenter.Initialize(this);
-        coordinatesPresenter.Initialize(this);
         winPlayer.text = "";
         tatetiPresenter.RestartGame();
         coordinatesPresenter.RestartGame();
@@ -97,16 +95,15 @@ public class TatetiView : MonoBehaviour, ITatetiView
 
     }
 
-    public void Initialize(TatetiPresenter tatetiPresenter)
+    public void InitializeTateti(TatetiPresenter tatetiPresenter)
     {
         this.tatetiPresenter = tatetiPresenter;
     }
 
-
-
-
-
-
+    public void InitializeCoordinates(CoordinatesPresenter coordinatesPresenter)
+    {
+        this.coordinatesPresenter = coordinatesPresenter;
+    }
     public void SetWinner(string winner)
     {
         if (winner == "nobody")

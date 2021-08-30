@@ -12,7 +12,6 @@
         return positionInMatrix;
     }
 
-
     private int GetXPosition(int positionInArray)
     {
         return positionInArray % SIZE;
@@ -37,7 +36,7 @@
         {
             for (int row = 0; row < Matrix.GetLength(0); row++)
             {
-                Matrix[row, column] = null;
+                matrix[row, column] = null;
             }
         }
         

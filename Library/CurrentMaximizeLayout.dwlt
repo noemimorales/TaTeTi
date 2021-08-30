@@ -20,11 +20,11 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 1280
-    height: 587.3334
-  m_MinSize: {x: 504, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+    height: 587
+  m_MinSize: {x: 503, y: 342}
+  m_MaxSize: {x: 12003, y: 8042}
   vertical: 0
-  controlID: 1718
+  controlID: 3510
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -45,10 +45,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2121.3333
+    x: 2120.6667
     y: 72.66667
-    width: 798.6667
-    height: 295.66666
+    width: 799.3333
+    height: 295
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -56,7 +56,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 798.6667, y: 274.66666}
+  m_TargetSize: {x: 799.3333, y: 274}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -71,10 +71,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -266.22223
-    m_HBaseRangeMax: 266.22223
-    m_VBaseRangeMin: -91.55556
-    m_VBaseRangeMax: 91.55556
+    m_HBaseRangeMin: -266.44446
+    m_HBaseRangeMax: 266.44446
+    m_VBaseRangeMin: -91.333336
+    m_VBaseRangeMax: 91.333336
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -92,23 +92,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 798.6667
-      height: 274.66666
+      width: 799.3333
+      height: 274
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 399.33334, y: 137.33333}
+    m_Translation: {x: 399.66666, y: 137}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -399.33334
-      y: -137.33333
-      width: 798.6667
-      height: 274.66666
+      x: -399.66666
+      y: -137
+      width: 799.3333
+      height: 274
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1198, y: 443.5}
+  m_LastWindowPixelSize: {x: 1199, y: 442.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000000000000
@@ -134,11 +134,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1002
-    height: 587.3334
-  m_MinSize: {x: 403, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
+    height: 587
+  m_MinSize: {x: 402, y: 342}
+  m_MaxSize: {x: 8002, y: 8042}
   vertical: 1
-  controlID: 1719
+  controlID: 3511
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -159,11 +159,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1002
-    height: 316.66666
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+    height: 316
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 1701
+  controlID: 3512
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -181,10 +181,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 201.33333
-    height: 316.66666
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 200.66667
+    height: 316
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -212,15 +212,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1920
     y: 72.66667
-    width: 200.33333
-    height: 295.66666
+    width: 199.66667
+    height: 295
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 72f5ffff64f7ffff1cfaffff
+      m_ExpandedIDs: c4f1ffff68f3ffff40fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -259,12 +259,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 201.33333
+    x: 200.66667
     y: 0
-    width: 800.6667
-    height: 316.66666
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 801.3333
+    height: 316
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 8}
@@ -403,9 +403,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 316.66666
+    y: 316
     width: 1002
-    height: 270.66672
+    height: 271
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 11}
@@ -435,9 +435,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1920
-    y: 389.33334
+    y: 388.6667
     width: 1001
-    height: 249.66672
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -464,10 +464,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 24410000
-    m_LastClickedID: 16676
-    m_ExpandedIDs: 000000000441000000ca9a3b
+    scrollPos: {x: 0, y: 30}
+    m_SelectedIDs: f4400000
+    m_LastClickedID: 16628
+    m_ExpandedIDs: 00000000da400000ee40000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -495,7 +495,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000441000000ca9a3b
+    m_ExpandedIDs: 00000000da40000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -522,7 +522,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -572,9 +572,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1920
-    y: 389.33334
+    y: 388.6667
     width: 1001
-    height: 249.66672
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &12
 MonoBehaviour:
@@ -594,9 +594,9 @@ MonoBehaviour:
     x: 1002
     y: 0
     width: 278
-    height: 587.3334
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+    height: 587
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 13}
@@ -663,10 +663,10 @@ MonoBehaviour:
     x: 2922
     y: 72.66667
     width: 277
-    height: 566.3334
+    height: 566
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 1754
+    ID: 3532
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -750,7 +750,7 @@ MonoBehaviour:
       name: TaTeTi
       fullName: TaTeTi
       resultStatus: 1
-      duration: 0.1296968
+      duration: 0.0789343
       messages: 
       output: 
       stacktrace: 
@@ -766,7 +766,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: D:/_mio/katas/TaTeTi/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.0897834
+      duration: 0.0535449
       messages: 
       output: 
       stacktrace: 
@@ -782,7 +782,7 @@ MonoBehaviour:
       name: CoordinatesShould
       fullName: CoordinatesShould
       resultStatus: 1
-      duration: 0.06003
+      duration: 0.0326269
       messages: 
       output: 
       stacktrace: 
@@ -798,7 +798,7 @@ MonoBehaviour:
       name: GetPlayerPositions
       fullName: CoordinatesShould.GetPlayerPositions
       resultStatus: 1
-      duration: 0.0153607
+      duration: 0.0002735
       messages: 
       output: 
       stacktrace: 
@@ -815,7 +815,7 @@ MonoBehaviour:
       name: HasAThreeByThreeMatrix
       fullName: CoordinatesShould.HasAThreeByThreeMatrix
       resultStatus: 1
-      duration: 0.0014794
+      duration: 0.0001786
       messages: 
       output: 
       stacktrace: 
@@ -832,7 +832,7 @@ MonoBehaviour:
       name: ObtainPositionInMatrix
       fullName: CoordinatesShould.ObtainPositionInMatrix
       resultStatus: 1
-      duration: 0.014725
+      duration: 0.0145294
       messages: 
       output: 
       stacktrace: 
@@ -848,7 +848,7 @@ MonoBehaviour:
       name: ObtainPositionInMatrix(0,0,0)
       fullName: CoordinatesShould.ObtainPositionInMatrix(0,0,0)
       resultStatus: 1
-      duration: 0.0014297
+      duration: 0.0003351
       messages: 
       output: 
       stacktrace: 
@@ -865,7 +865,7 @@ MonoBehaviour:
       name: ObtainPositionInMatrix(1,0,1)
       fullName: CoordinatesShould.ObtainPositionInMatrix(1,0,1)
       resultStatus: 1
-      duration: 0.0004866
+      duration: 0.0002783
       messages: 
       output: 
       stacktrace: 
@@ -882,7 +882,7 @@ MonoBehaviour:
       name: ObtainPositionInMatrix(2,0,2)
       fullName: CoordinatesShould.ObtainPositionInMatrix(2,0,2)
       resultStatus: 1
-      duration: 0.0002599
+      duration: 0.0002213
       messages: 
       output: 
       stacktrace: 
@@ -899,7 +899,7 @@ MonoBehaviour:
       name: ObtainPositionInMatrix(0,1,3)
       fullName: CoordinatesShould.ObtainPositionInMatrix(0,1,3)
       resultStatus: 1
-      duration: 0.0002824
+      duration: 0.000386
       messages: 
       output: 
       stacktrace: 
@@ -916,7 +916,7 @@ MonoBehaviour:
       name: ObtainPositionInMatrix(1,1,4)
       fullName: CoordinatesShould.ObtainPositionInMatrix(1,1,4)
       resultStatus: 1
-      duration: 0.0001627
+      duration: 0.0002438
       messages: 
       output: 
       stacktrace: 
@@ -933,7 +933,7 @@ MonoBehaviour:
       name: ObtainPositionInMatrix(2,1,5)
       fullName: CoordinatesShould.ObtainPositionInMatrix(2,1,5)
       resultStatus: 1
-      duration: 0.0001492
+      duration: 0.0003494
       messages: 
       output: 
       stacktrace: 
@@ -950,7 +950,7 @@ MonoBehaviour:
       name: ObtainPositionInMatrix(0,2,6)
       fullName: CoordinatesShould.ObtainPositionInMatrix(0,2,6)
       resultStatus: 1
-      duration: 0.0002995
+      duration: 0.0004062
       messages: 
       output: 
       stacktrace: 
@@ -967,7 +967,7 @@ MonoBehaviour:
       name: ObtainPositionInMatrix(1,2,7)
       fullName: CoordinatesShould.ObtainPositionInMatrix(1,2,7)
       resultStatus: 1
-      duration: 0.0001496
+      duration: 0.0002338
       messages: 
       output: 
       stacktrace: 
@@ -984,7 +984,7 @@ MonoBehaviour:
       name: ObtainPositionInMatrix(2,2,8)
       fullName: CoordinatesShould.ObtainPositionInMatrix(2,2,8)
       resultStatus: 1
-      duration: 0.0001463
+      duration: 0.0003596
       messages: 
       output: 
       stacktrace: 
@@ -1001,7 +1001,7 @@ MonoBehaviour:
       name: SavePositionInMatrix
       fullName: CoordinatesShould.SavePositionInMatrix
       resultStatus: 1
-      duration: 0.0138392
+      duration: 0.01492
       messages: 
       output: 
       stacktrace: 
@@ -1017,7 +1017,7 @@ MonoBehaviour:
       name: SavePositionInMatrix("Player1",0,0,0)
       fullName: CoordinatesShould.SavePositionInMatrix("Player1",0,0,0)
       resultStatus: 1
-      duration: 0.0013268
+      duration: 0.0002914
       messages: 
       output: 
       stacktrace: 
@@ -1034,7 +1034,7 @@ MonoBehaviour:
       name: SavePositionInMatrix("Player1",1,0,1)
       fullName: CoordinatesShould.SavePositionInMatrix("Player1",1,0,1)
       resultStatus: 1
-      duration: 0.0002854
+      duration: 0.000315
       messages: 
       output: 
       stacktrace: 
@@ -1051,7 +1051,7 @@ MonoBehaviour:
       name: SavePositionInMatrix("Player1",2,0,2)
       fullName: CoordinatesShould.SavePositionInMatrix("Player1",2,0,2)
       resultStatus: 1
-      duration: 0.0001622
+      duration: 0.0002564
       messages: 
       output: 
       stacktrace: 
@@ -1068,7 +1068,7 @@ MonoBehaviour:
       name: SavePositionInMatrix("Player1",0,1,3)
       fullName: CoordinatesShould.SavePositionInMatrix("Player1",0,1,3)
       resultStatus: 1
-      duration: 0.0001599
+      duration: 0.0002619
       messages: 
       output: 
       stacktrace: 
@@ -1085,7 +1085,7 @@ MonoBehaviour:
       name: SavePositionInMatrix("Player1",1,1,4)
       fullName: CoordinatesShould.SavePositionInMatrix("Player1",1,1,4)
       resultStatus: 1
-      duration: 0.0001562
+      duration: 0.0003997
       messages: 
       output: 
       stacktrace: 
@@ -1102,7 +1102,7 @@ MonoBehaviour:
       name: SavePositionInMatrix("Player1",2,1,5)
       fullName: CoordinatesShould.SavePositionInMatrix("Player1",2,1,5)
       resultStatus: 1
-      duration: 0.0001956
+      duration: 0.0002673
       messages: 
       output: 
       stacktrace: 
@@ -1119,7 +1119,7 @@ MonoBehaviour:
       name: SavePositionInMatrix("Player1",0,2,6)
       fullName: CoordinatesShould.SavePositionInMatrix("Player1",0,2,6)
       resultStatus: 1
-      duration: 0.0003043
+      duration: 0.0001622
       messages: 
       output: 
       stacktrace: 
@@ -1136,7 +1136,7 @@ MonoBehaviour:
       name: SavePositionInMatrix("Player1",1,2,7)
       fullName: CoordinatesShould.SavePositionInMatrix("Player1",1,2,7)
       resultStatus: 1
-      duration: 0.0004318
+      duration: 0.0001541
       messages: 
       output: 
       stacktrace: 
@@ -1153,7 +1153,7 @@ MonoBehaviour:
       name: SavePositionInMatrix("Player1",2,2,8)
       fullName: CoordinatesShould.SavePositionInMatrix("Player1",2,2,8)
       resultStatus: 1
-      duration: 0.000496
+      duration: 0.0002108
       messages: 
       output: 
       stacktrace: 
@@ -1170,7 +1170,7 @@ MonoBehaviour:
       name: TatetiShould
       fullName: TatetiShould
       resultStatus: 1
-      duration: 0.0276811
+      duration: 0.0194654
       messages: 
       output: 
       stacktrace: 
@@ -1186,7 +1186,7 @@ MonoBehaviour:
       name: ChangePlayerAfterPlay
       fullName: TatetiShould.ChangePlayerAfterPlay
       resultStatus: 1
-      duration: 0.0083458
+      duration: 0.0023178
       messages: 
       output: 
       stacktrace: 
@@ -1202,7 +1202,7 @@ MonoBehaviour:
       name: ChangePlayerAfterPlay(False,True)
       fullName: TatetiShould.ChangePlayerAfterPlay(False,True)
       resultStatus: 1
-      duration: 0.0022705
+      duration: 0.0003664
       messages: 
       output: 
       stacktrace: 
@@ -1219,7 +1219,7 @@ MonoBehaviour:
       name: ChangePlayerAfterPlay(True,False)
       fullName: TatetiShould.ChangePlayerAfterPlay(True,False)
       resultStatus: 1
-      duration: 0.0004324
+      duration: 0.0004106
       messages: 
       output: 
       stacktrace: 
@@ -1236,7 +1236,7 @@ MonoBehaviour:
       name: CheckIfIsTateti
       fullName: TatetiShould.CheckIfIsTateti
       resultStatus: 1
-      duration: 0.0010596
+      duration: 0.0002386
       messages: 
       output: 
       stacktrace: 
@@ -1253,7 +1253,7 @@ MonoBehaviour:
       name: SavePlayer
       fullName: TatetiShould.SavePlayer
       resultStatus: 1
-      duration: 0.0080049
+      duration: 0.0090471
       messages: 
       output: 
       stacktrace: 
@@ -1269,7 +1269,7 @@ MonoBehaviour:
       name: SavePlayer("Player1",True)
       fullName: TatetiShould.SavePlayer("Player1",True)
       resultStatus: 1
-      duration: 0.0005573
+      duration: 0.0005532
       messages: 
       output: 
       stacktrace: 
@@ -1286,7 +1286,7 @@ MonoBehaviour:
       name: SavePlayer("Player2",False)
       fullName: TatetiShould.SavePlayer("Player2",False)
       resultStatus: 1
-      duration: 0.0003309
+      duration: 0.0003129
       messages: 
       output: 
       stacktrace: 
@@ -1303,7 +1303,7 @@ MonoBehaviour:
       name: SearchCoincidens
       fullName: TatetiShould.SearchCoincidens
       resultStatus: 1
-      duration: 0.0009501
+      duration: 0.0005299
       messages: 
       output: 
       stacktrace: 
@@ -1315,7 +1315,7 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/[Tests][TatetiShould][suite]
-    m_ResultText: CheckIfIsTateti (0,001s)
+    m_ResultText: CheckIfIsTateti (0,000s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
